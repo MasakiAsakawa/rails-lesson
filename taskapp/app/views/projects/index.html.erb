@@ -4,6 +4,8 @@
   <li>
     <%= link_to project.title, project_path(project.id) %>
     <%= link_to "[Edit]", edit_project_path(project.id) %>
+    <%= link_to "[Destroy]", project_path(project.id),method: :delete, data:{
+    confirm: "ara you sure?"} %>
   </li>
   <% end%>
 </ul>
