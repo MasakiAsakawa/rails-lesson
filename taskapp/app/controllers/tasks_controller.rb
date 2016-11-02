@@ -13,7 +13,7 @@ class TasksController < ApplicationController
   end
 
   def toggle
-    render nothing: ture
+    render nothing: true
     @task = Task.find(params[:id])
     @task.done = !@task.done
     @task.save
